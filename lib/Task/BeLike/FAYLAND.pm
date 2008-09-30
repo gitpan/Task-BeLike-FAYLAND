@@ -3,7 +3,7 @@ package Task::BeLike::FAYLAND;
 use warnings;
 use strict;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 1;
 __END__
@@ -31,6 +31,7 @@ Here are the contents:
   requires('Catalyst',                       '5.7014'  ); # work
   requires('DBIx::Class',                    '0.08010' ); # $$$$
   requires('Template',                       '2.20'    ); # @_@
+  requires('Template::Plugin::FillInForm',   undef     );
   requires('Perl::Critic',                   '1.080'   ); # perlcritic
   requires('Perl::Tidy',                     undef     ); # perltidy
   requires('HTML::TokeParser::Simple',       undef     );
@@ -46,7 +47,6 @@ Here are the contents:
   requires('Catalyst::Plugin::PickComponents');
   requires('Date::Holidays::CN');
   requires('Email::Send::SMTP::TLS'); # send mail through gmail
-  requires('Foorum');
   requires('Lingua::Han::Cantonese');
   requires('Lingua::Han::PinYin');
   requires('Lingua::Han::Stroke');
@@ -57,8 +57,10 @@ Here are the contents:
   requires('Pod::From::GoogleWiki');
   requires('Pod::Simple::Wiki::Googlecode');
   requires('POD2::CN');
+  requires('Sphinx::Control');
   requires('Template::Plugin::HtmlToText');
   requires('Text::GooglewikiFormat');
+  requires('Foorum');
 
 =head1 SEE ALSO
 
@@ -66,7 +68,7 @@ The idea and code is mostly a copy of RJBS' L<Task::BeLike::RJBS>
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2008 Fayland Lam, all rights reserved.
+Copyright 2008 Fayland Lam
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
