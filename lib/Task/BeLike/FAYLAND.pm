@@ -3,7 +3,7 @@ package Task::BeLike::FAYLAND;
 use warnings;
 use strict;
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 1;
 __END__
@@ -60,6 +60,7 @@ Here are the contents:
   requires('Sphinx::Control');
   requires('Template::Plugin::HtmlToText');
   requires('Text::GooglewikiFormat');
+  requires('WWW::Conatct');
   requires('Foorum');
 
 =head1 SEE ALSO
