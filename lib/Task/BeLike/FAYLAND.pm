@@ -3,7 +3,7 @@ package Task::BeLike::FAYLAND;
 use warnings;
 use strict;
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 1;
 __END__
@@ -20,14 +20,17 @@ Here are the contents:
 
   requires('CPAN',                           '1.87'    );
   requires('CPAN::Reporter',                 undef     ); # be a CPAN tester
+  requires('local::lib',                     undef     );
   requires('Scalar::Util',                   '1.18'    );
   requires('List::Util',                     undef     );
   requires('List::MoreUtils',                undef     );
   requires('File::Next',                     undef     );
   requires('DateTime',                       '0.41'    );
+  requires('Test::Pod',                      undef     );
   requires('WWW::Mechanize',                 undef     );
   requires('Email::Send',                    undef     );
   requires('Moose',                          '0.35'    );
+  requires('PPI',                            undef     );
   requires('Catalyst',                       '5.7014'  ); # work
   requires('DBIx::Class',                    '0.08010' ); # $$$$
   requires('Template',                       '2.20'    ); # @_@
@@ -54,10 +57,13 @@ Here are the contents:
   requires('Locale::Country::Multilingual');
   requires('Mail::Mailer::smtp_auth');
   requires('MooseX::TheSchwartz');
+  requires('MooseX::Types::IO');
   requires('Pod::From::GoogleWiki');
   requires('Pod::Simple::Wiki::Googlecode');
   requires('POD2::CN');
+  requires('MooseX::Control');
   requires('Sphinx::Control');
+  requires('Perlbal::Control');
   requires('Template::Plugin::HtmlToText');
   requires('Text::GooglewikiFormat');
   requires('WWW::Conatct');
